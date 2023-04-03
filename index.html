@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./fetch.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="logo"><label>Play</label> Cloud</div>
+        <button id="dark-mode-toggle" class="button-dark">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+         <div class="new-releases">New Releases</div>
+      </div>
+      <div class="body-app">
+        <div class="menu-app" id="menu">
+          <div class="list-brow">
+            <div class="browse-music">Browse Music</div>
+            <div class="home">Home</div>
+            <div class="home">Album</div>
+            <div class="home">Charts</div>
+            <div class="home">Radio</div>
+          </div>
+          <div class="list-brow">
+            <div class="browse-music">Library</div>
+            <div class="home">Recently Played</div>
+            <div class="home">Favorite Tracks</div>
+            <div class="home">Tracks</div>
+            <div class="home">Geners</div>
+          </div>
+        </div>
+        <div class="body-content">
+          <div class="curated">
+            <div class="list-cura">
+              <div class="name-cura">
+                Curated PlayLiST
+             </div>
+             <div class="name-cura">
+               <div class="name">R&B Hits</div>
+               <div>Hot shot, Confessions,Usher...</div>
+           </div>
+           <div class="name-cura hes">
+            <div class="name"></div>
+            <div>50,056 Likes</div>
+            <div>200 Song, 13 hr 7 min</div>
+          </div>
+            </div>
+          </div>
+          <div class="top-name"><p>PlayList</p></div>
+          <div class="playlist">
+            
+            <div class="ls-music">
+            </div>
+          </div>
+          <div id="name-data"></div>
+        </div>
+        <div class="playlist-nav">
+        <div class="lyrics"></div>
+        </div>
+     
+      </div>
+      <nav class="nav-music">
+        <div class="player">
+          <div class="dashboard">
+            <div class="cd">
+              <div class="cd-thumb"></div>
+            </div>
+            <header>
+              <h4>Now playing:</h4>
+              <h3>Singer</h3>
+              <h2>String 57th & 9th</h2>
+            </header>
+         
+          <div class="cotrol-nav">
+            <div class="control">
+              <div class="btn btn-repeat">
+                <i class="fas fa-redo"></i>
+              </div>
+              <div class="btn btn-prev">
+                <i class="fas fa-step-backward"></i>
+              </div>
+              <div class="btn btn-toggle-play">
+                <i class="fas fa-pause icon-pause"></i>
+                <i class="fas fa-play icon-play"></i>
+              </div>
+              <div class="btn btn-next">
+                <i class="fas fa-step-forward"></i>
+              </div>
+              <div class="btn btn-random">
+                <i class="fas fa-random"></i>
+              </div>
+            </div>
+
+            <input
+              id="progress"
+              class="progress"
+              type="range"
+              value="0"
+              step="1"
+              min="0"
+              max="100"
+            />
+          </div>
+
+            <audio id="audio" src=""></audio>
+          </div>
+
+          
+          
+        </div>
+      </nav>
+    </div>
+    <script src="./js.js"></script>
+
+    <script src="./slick.js"></script>
+  </body>
+ 
+
+</html>
